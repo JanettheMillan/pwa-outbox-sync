@@ -1,0 +1,84 @@
+body {
+  font-family: Verdana, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+header {
+  background: #0f766e;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.online { background: #22c55e; color: #052e16; }
+.offline { background: #ef4444; color: white; }
+
+main {
+  max-width: 700px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  border-radius: 6px;
+}
+
+button {
+  background: #14b8a6;
+  color: #042f2e;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lista-outbox {
+  padding: 0;
+}
+
+#lista-outbox li {
+  padding: 10px;
+  margin-bottom: 8px;
+  list-style: none;
+  border-radius: 6px;
+  background: #0f172a;
+}
+
+#lista-outbox li.pendiente { border-left: 5px solid #f59e0b; }
+#lista-outbox li.sincronizado { border-left: 5px solid #22c55e; }
